@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #7f5cff, #22d3ee);
+  transition: background 0.5s;
+}
+
+.container {
+  width: 90%;
+  max-width: 500px;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+header h1 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+}
+
+#quote {
+  font-size: 12px;
+  color: #eee;
+  flex-grow: 1;
+  text-align: center;
+}
+
+#themeToggle {
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.input-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.input-container input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+.input-container button {
+  padding: 12px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #22d3ee;
+  color: #fff;
+  font-size: 18px;
+  transition: transform 0.2s;
+}
+.input-container button:hover {
+  transform: scale(1.1);
+}
+
+.todoList {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.todoList li {
+  background: rgba(255,255,255,0.9);
+  margin: 8px 0;
+  padding: 10px 12px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.3s;
+}
+
+.todoList li.completed p {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.todoList li button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 18px;
+  margin-left: 10px;
+  transition: transform 0.2s;
+}
+.todoList li button:hover {
+  transform: scale(1.2);
+}
+
+.progress-container {
+  height: 8px;
+  width: 100%;
+  background: rgba(255,255,255,0.3);
+  border-radius: 8px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background: #22d3ee;
+  transition: width 0.4s ease;
+}
